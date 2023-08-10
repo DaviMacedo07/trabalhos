@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim</title>
+</head>
+<body>
+    <h1>Boletim Escolar</h1>
+    <div>
+        <input type="text" placeholder="Digite sua Primeira nota" id="nota1"> <br> <br>
+        <input type="text" placeholder="Digite sua Segunda nota" id="nota2"> <br> <br>
+        <input type="button" value="Calcular" onclick="calcularMedia()"> 
+        <div id="res"> <br>
+            Resposta:
+        </div>
+    </div>
+
+    <script>
+        
+        function  calcularMedia() { 
+        let nota1 = parseFloat(document.getElementById("nota1").value) ;
+        let nota2 = parseFloat(document.getElementById("nota2").value) ;
+        let resultadoDiv = document.getElementById("res");
+       
+
+            if (isNaN(nota1) || isNaN(nota2)) {
+                resultadoDiv.innerHTML = "Por favor, insira valores numéricos válidos.";
+                return;
+            }
+        let somaNotas = nota1 + nota2;
+        if (somaNotas > 20) {
+                resultadoDiv.innerHTML = "A soma das notas não pode exceder 20.";
+                return;
+            }
+        let mediag = somaNotas / 2;
+           if( mediag < 7) {
+            resultadoDiv.innerHTML = `Sua media foi ${mediag}. Reprovado!`
+           } else {
+            resultadoDiv.innerHTML = `Sua media foi ${mediag}. Aprovado!`
+           }
+         
+        }
+
+    </script>
+   
+</body>
+</html>

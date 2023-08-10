@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avaliação de Estrelas</title>
+</head>
+<body>
+    <h1>Avalie este produto:</h1>
+    <form>
+        <input type="checkbox" id="estrela1" class="estrela">
+        <input type="checkbox" id="estrela2" class="estrela">
+        <input type="checkbox" id="estrela3" class="estrela">
+        <input type="checkbox" id="estrela4" class="estrela">
+        <input type="checkbox" id="estrela5" class="estrela">
+    </form>
+    <p id="mensagem"></p>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.estrela');
+        const mensagem = document.getElementById('mensagem');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const estrelasSelecionadas = document.querySelectorAll('.estrela:checked').length;
+                mensagem.textContent = `Foram selecionadas ${estrelasSelecionadas} estrelas de 5.`;
+            });
+        });
+    </script>
+</body>
+</html>

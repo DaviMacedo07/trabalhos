@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabuada </h1>   
+    <button onclick="mostrarTabuada()" style="margin-top: 5px;">Mostrar Tabuada</button> 
+    <button id="reset" type="reset" onclick="LimparTabuada()">Limpar Tabuada</button> <br>  
+    <div id="output"></div>
+<script>    
+       /*     let texton = document.getElementById('texton')
+            if (texton = string || 0) {
+                window.innerHTML = 'Por favor, digite um número válido'
+            } else {
+                window.innerHTML = 'ok'
+            }*/
+            let output = document.getElementById('output') 
+
+            function mostrarTabuada(){
+                let n = parseFloat(prompt('Digite um Número'))
+                let msg = ''
+                for(let i=0; i<=1000 ; i++){
+                    msg += `${n} x ${i} = ${(i * n)} <br>`
+                }
+                output.innerHTML = msg            
+            }
+
+            function LimparTabuada(){
+            //    var clean = document.getElementById(reset)
+                output.innerHTML = ''
+            }
+
+       //     let reset = document.getElementById('reset')
+</script>
+</body>
+</html>

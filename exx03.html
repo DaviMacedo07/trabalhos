@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="informações()"></button>
+    <script>
+        function informações() {
+            let nome = prompt('Digite seu Nome')
+
+            while(nome.length <= 2 ) {
+                alert("Nome inválido ! Digite novamente") ;
+                name = parseInt(prompt('Digite seu Nome'))
+            }
+
+            let idade = parseInt(prompt("Qual a sua Idade"))
+
+            while(idade <= 0 || idade > 120 || isNaN(idade)) {
+                alert("Idade Inválida") ;
+                idade = prompt('Digite sua Idade')
+            }
+
+            let salario = prompt('Digite seu salário')
+
+            while(salario <= 0 ) {
+                alert("Salário não é valido") ;
+                salario = prompt('Digite seu salário')
+            } 
+
+            let sexo = prompt('Digite seu Sexo : F ou M')
+            
+            while( sexo !== 'M' && sexo !== 'F') {    
+                alert("Sexo Indefinido")
+                sexo = prompt('Digite seu Sexo: F ou M')
+            }
+          alert(`Seja bem vindo ${nome}, você tem ${idade} anos e possui ${salario} reais como salário e é ${sexo}`)  
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+     <div id="ola" onmouseenter="passou()"> 
+        <h1 onmouseleave="saiu()">Ola Belo Pessoal</h1></div>
+    
+
+
+    <script>
+        var palavra = document.getElementById('ola')
+        function passou() {
+            palavra.style.backgroundColor = 'red'
+            palavra.style.textAlign = 'Center'
+        }
+        function saiu() {
+            palavra.style.backgroundColor = 'Blue'
+            palavra.style.textAlign = 'Center'
+        }
+    </script>
+</body>
+</html>
