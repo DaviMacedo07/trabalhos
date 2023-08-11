@@ -9,13 +9,16 @@
     position: absolute;
     top: 30%;
     left: 50%;
+    
     background-color: white;
     width: 250px;
     height: 280px;
     border-radius: 20px;   
     transform: translate(-50%, -50%);
 }
-
+#itens > input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+}
 .paragrafo {
     background-color: white;
 }
