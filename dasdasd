@@ -1,0 +1,43 @@
+#principal{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%, -50%);       
+}
+#form-item {
+    background-color: #1280DB;
+    border-radius: 10px;
+    margin-top: 4.2px;
+    margin-left: 37px;
+    padding-block-start: 5px; 
+}
+.inputs{
+    border-radius: 10px;
+    margin-top: 4.2px;
+    margin-left: 37px;
+    padding-block-start: 5px;   
+} */
+input[type=button] {
+    border-radius: 4px;
+    width: 54vw;
+    margin-top: 4.2px;
+    margin-left: .2px;
+    
+}   
+/* #principal > #itens-boletim { 
+    background-color: #1280DB;
+    border-radius: 10px;     
+}
+
+#principal > #nota1{
+    text-align: center;
+    
+}
+
+h1{ 
+    width: 100vw;  
+    text-align: center;
+    position: relative;
+}
